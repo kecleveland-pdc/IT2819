@@ -6,9 +6,11 @@ print("The degree entry is: ", degree)
 print("The degree type is: ", input_type)
 # Add code here
 if input_type.upper() == "C":
-    print("Celsius")
+    output_type = "Fahrenheit"
+    result = (degree * 9/5) + 32
 elif input_type.upper() == "F":
-    print("Fahrenheit")
+    output_type = "Celsius"
+    result = (degree - 32) / (9/5)
 else:
     print("This is not valid input.")
-# print("The temperature in", output_type, "is", result, "degrees.
+print("The temperature in " + output_type + " is " + str(result) + " degrees.")
