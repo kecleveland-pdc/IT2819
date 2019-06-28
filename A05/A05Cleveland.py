@@ -12,5 +12,5 @@ elif input_type.upper() == "F":
     output_type = "Celsius"
     result = (degree - 32) / (9/5)
 else:
-    print("This is not valid input.")
+    exit()
 print("The temperature in " + output_type + " is " + str(result) + " degrees.")
