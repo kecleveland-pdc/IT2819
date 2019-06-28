@@ -14,7 +14,7 @@ while (is_running):
         output_type = "Celsius"
         result = (degree - 32) / (9/5)
     elif input_type.upper() == "X":
-        print("Exiting...")
+        print("Goodbye!")
         exit()
     else:
         print("Input proper convention.")
