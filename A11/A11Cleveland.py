@@ -14,12 +14,18 @@ while True:
 
         if input_type.upper() == "C":
             result = int(round((9 * degree) / 5 + 32))
+            resultK = int(round(degree + 273.15))
             output_type = "Fahrenheit"
             print("The temperature in", output_type, "is", result, "degrees.")
+            print("The temperature in Kelvin is ", resultK, "degrees.")
         elif input_type.upper() == "F":
             result = int(round((degree - 32) * 5 / 9))
+            resultK = int(round((degree + 459.67) * 5/9))
             output_type = "Celsius"
             print("The temperature in", output_type, "is", result, "degrees.")
+            print("The temperature in Kelvin is ", resultK, "degrees.")
+        else:
+            print("That was not a valid entry. Try again.")
     except:
-          print("Input proper convention.")
+          print("That was not a valid entry. Try again.")
 print("Goodbye!")
