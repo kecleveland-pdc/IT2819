@@ -15,9 +15,15 @@ def main():
     incorrect=0
   
     # Game Loop
+    for key, value in programming_courses.items():
+        response = input("What is the course number of " + key + ": ")
+        if response == value:
+            print("That's Correct!")
+            correct += 1
+        else:
+            print("That's Incorrect!")
+            incorrect += 1
 
-
-	    
     # Display correct and incorrect answers
     print ("You missed ",incorrect," courses.")
     print ("You got ",correct," courses.\n")
