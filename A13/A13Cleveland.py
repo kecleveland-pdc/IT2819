@@ -75,10 +75,6 @@ print ("Add: c")
 l.add( 'c' )
 print ("List = ", l, "\n")
 	
-print ("Remove: c")
-l.remove( 'c' )
-print ("List = ", l, "\n")
-
-print ("Remove: a")
-l.remove( 'a' )
+print ("Remove: b")
+l.remove( 'b' )
 print ("List = ", l, "\n")
